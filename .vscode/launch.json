@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SecurityApplication<Security>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "POLYGLOT.MS.TEST.Security.SecurityApplication",
+            "projectName": "Security",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
