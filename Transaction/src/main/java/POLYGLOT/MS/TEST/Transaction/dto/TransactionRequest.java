@@ -2,32 +2,32 @@ package POLYGLOT.MS.TEST.Transaction.dto;
 
 public class TransactionRequest {
     
-    private Integer id;
+    private Integer id_transaction;    
+    private Integer id_operation;
+    private Integer id_invoice;
 	private double amount;
-	private String type;
-    private String creationDate;
-    private Integer accountId;
+    private String date;    
     
-    public Integer getId() {
-        return id;
+    public Integer getId_transaction() {
+        return id_transaction;
     }
-    public Integer getAccountId() {
-        return accountId;
+    public void setId_transaction(Integer id_transaction) {
+        this.id_transaction = id_transaction;
     }
-    public void setAccountId(Integer accountId) {
-        this.accountId = accountId;
+    public Integer getId_operation() {
+        return id_operation;
     }
-    public String getCreationDate() {
-        return creationDate;
+    public Integer getId_invoice() {
+        return id_invoice;
     }
-    public void setCreationDate(String creationDate) {
-        this.creationDate = creationDate;
+    public void setId_invoice(Integer accountId) {
+        this.id_invoice = accountId;
     }
-    public String getType() {
-        return type;
+    public String getDate() {
+        return date;
     }
-    public void setType(String type) {
-        this.type = type;
+    public void setDate(String creationDate) {
+        this.date = creationDate;
     }
     public double getAmount() {
         return amount;
@@ -35,7 +35,7 @@ public class TransactionRequest {
     public void setAmount(double amount) {
         this.amount = amount;
     }
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId_operation(Integer id) {
+        this.id_operation = id;
     }
 }
