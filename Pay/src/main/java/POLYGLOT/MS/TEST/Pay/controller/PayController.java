@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import POLYGLOT.MS.TEST.Pay.dto.PayRequest;
-import POLYGLOT.MS.TEST.Pay.message.PayMessagePublish;
+// import POLYGLOT.MS.TEST.Pay.message.PayMessagePublish;
 import POLYGLOT.MS.TEST.Pay.model.PayModel;
 import POLYGLOT.MS.TEST.Pay.service.IPayService;
 
@@ -22,8 +22,8 @@ public class PayController {
         @Autowired
         IPayService payService;
 
-        @Autowired
-        PayMessagePublish messageEvent;
+        // @Autowired
+        // PayMessagePublish messageEvent;
 
         Logger logger = LoggerFactory.getLogger(PayController.class);
 
@@ -36,7 +36,7 @@ public class PayController {
                 payModel.setAmount(request.getAmount());
                 payModel = payService.add(payModel);
                 logger.info("transactionModel {}", payModel);
-                messageEvent.sendDepositEvent(payModel);                
+                // messageEvent.sendDepositEvent(payModel);                
                 return ResponseEntity.status(HttpStatus.CREATED).body(payModel);
         }
 

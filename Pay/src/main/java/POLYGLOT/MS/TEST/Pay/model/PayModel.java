@@ -21,11 +21,13 @@ public class PayModel implements Serializable {
    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_operation")
     private Integer id_operation;
 
     @Column(name = "id_invoice")
     private Integer id_invoice;
 
+    @Column(name = "amount")
     private double amount;
 
     @Column(name = "date")
